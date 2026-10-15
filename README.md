@@ -37,11 +37,11 @@
   DD@{shape: rect, label: "nilaiAvg /= nilaiGabungan.length"}
   EE@{shape: rect, label: "nilaiAvg = 0"}
 
-  A --> C --> D --> E --> J --> I --TRUE--> F --> K --TRUE--> M --> P
+  A --> C --> D --> E --> F --> J --> I --TRUE--> K --TRUE--> M --> P
 
   K --FALSE--> P --> I
 
-  I --False--> Q --> R --> S --TRUE--> G --> N --TRUE--> T --> U
+  I --False--> Q --> G --> R --> S --TRUE--> N --TRUE--> T --> U
 
   N --FALSE--> U --> S
 
