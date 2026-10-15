@@ -8,13 +8,13 @@
 
 ```mermaid
 
-  flowchart LR
+  flowchart TD
 
   A@{shape: sm-circ, label: "Start"}
   B@{shape: fr-circ, label: "End"}
   E@{shape: rect, label: "nilaiGabungan"}
   F@{shape: rect, label: "nilaiMax = 0"}
-  G@{shape: rect, label: "nilaiMin = 0"}
+  G@{shape: rect, label: "nilaiMin = nilaiGabungan[0]"}
   I@{shape: diam, label: "a < nilaiGabungan.length"}
   J@{shape: rect, label: "a = 0"}
   K@{shape: diam, label: "nilaiGabungan[a] > nilaiMax"}
