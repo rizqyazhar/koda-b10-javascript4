@@ -20,7 +20,7 @@
   I@{shape: diam, label: "a < nilaiGabungan.length"}
   J@{shape: rect, label: "a = 0"}
   K@{shape: diam, label: "nilaiGabungan[a] > nilaiMax[a]"}
-  M@{shape: rect, label: "nilaiMax = [...nilaiMax, ...nilaiGabungan[a]]"}
+  M@{shape: rect, label: "nilaiMax = [...nilaiGabungan[a]], ...nilaiMax"}
   N@{shape: diam, label: "nilaiGabungan[a] < nilaiMin[a]"}
   P@{shape: rect, label: "a++"}
   Q@{shape: lean-r, label: "nilaiMax"}
