@@ -27,7 +27,7 @@
   Y@{shape: lean-r, label: "nilaiAvg"}
   AA@{shape: rect, label: "nilaiAvg += nilaiGabungan[a]"}
   DD@{shape: rect, label: "nilaiAvg /= nilaiGabungan.length"}
-  EE@{shape: rect, label: "nilaiAvg = 0"}
+  EE@{shape: rect, label: "nilaiAvg =0"}
 
   A --> E --> F --> G --> EE --> J --> I --TRUE--> K --TRUE--> M --> N --TRUE--> T --> AA --> P --> I
 
