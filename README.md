@@ -8,46 +8,36 @@
 
 ```mermaid
 
-  flowchart LR
+  flowchart TD
 
   A@{shape: sm-circ, label: "Start"}
   B@{shape: fr-circ, label: "End"}
-  C@{shape: rect, label: "nilaiBudi = [80,75,90,95,70,75,95,60,65,80]"}
-  D@{shape: rect, label: "nilaiAndi = [70,80,80,75,80,85,65,75,85,50]"}
-  E@{shape: rect, label: "nilaiGabungan = [...nilaiBudi, ...nilaiAndi]"}
+  C@{shape: rect, label: "nilaiBudi"}
+  D@{shape: rect, label: "nilaiAndi"}
+  E@{shape: rect, label: "nilaiGabungan"}
   F@{shape: rect, label: "nilaiMax = 0"}
   G@{shape: rect, label: "nilaiMin = 0"}
   I@{shape: diam, label: "a < nilaiGabungan.length"}
   J@{shape: rect, label: "a = 0"}
   K@{shape: diam, label: "nilaiGabungan[a] > nilaiMax"}
   M@{shape: rect, label: "nilaiMax = nilaiGabungan[a]"}
-  N@{shape: diam, label: "nilaiMin < nilaiGabungan[b]"}
+  N@{shape: diam, label: "nilaiMin < nilaiGabungan[a]"}
   P@{shape: rect, label: "a++"}
   Q@{shape: lean-r, label: "nilaiMax"}
-  R@{shape: rect, label: "b = 0"}
-  S@{shape: diam, label: "b < nilaiGabungan.length"}
-  T@{shape: rect, label: "nilaiMin = nilaiGabungan[b]"}
-  U@{shape: rect, label: "b++"}
+  T@{shape: rect, label: "nilaiMin = nilaiGabungan[a]"}
   V@{shape: lean-r, label: "nilaiMin"}
-  W@{shape: rect, label: "c = 0"}
-  X@{shape: diam, label: "c < nilaiGabungan.length"}
   Y@{shape: lean-r, label: "nilaiAvg"}
-  AA@{shape: rect, label: "nilaiAvg += nilaiGabungan[c]"}
-  CC@{shape: rect, label: "c++"}
+  AA@{shape: rect, label: "nilaiAvg += nilaiGabungan[a]"}
   DD@{shape: rect, label: "nilaiAvg /= nilaiGabungan.length"}
   EE@{shape: rect, label: "nilaiAvg = 0"}
 
-  A --> C --> D --> E --> F --> J --> I --TRUE--> K --TRUE--> M --> P
+  A --> C --> D --> E --> F --> G --> EE --> J --> I --TRUE--> K --TRUE--> M --> N --TRUE--> T --> AA --> P --> I
 
-  K --FALSE--> P --> I
+  K --FALSE--> N
 
-  I --False--> Q --> G --> R --> S --TRUE--> N --TRUE--> T --> U
+  N --FALSE--> AA
 
-  N --FALSE--> U --> S
-
-  S --FALSE--> V --> EE --> W --> X --> AA --> CC --> X
-
-  X --FALSE--> DD --> Y --> B
+  I --FALSE--> DD --> Q --> V --> Y
 
 
 
