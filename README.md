@@ -8,25 +8,25 @@
 
 ```mermaid
 
-  flowchart LR
+  flowchart TD
 
   A@{shape: sm-circ, label: "Start"}
   B@{shape: fr-circ, label: "End"}
   C@{shape: rect, label: "nilaiBudi = [80,75,90,95,70,75,95,60,65,80]"}
   D@{shape: rect, label: "nilaiAndi = [70,80,80,75,80,85,65,75,85,50]"}
   E@{shape: rect, label: "nilaiGabungan = [...nilaiBudi, ...nilaiAndi]"}
-  F@{shape: rect, label: "nilaiMax = []"}
-  G@{shape: rect, label: "nilaiMin = []"}
+  F@{shape: rect, label: "nilaiMax = 0"}
+  G@{shape: rect, label: "nilaiMin = 0"}
   I@{shape: diam, label: "a < nilaiGabungan.length"}
   J@{shape: rect, label: "a = 0"}
-  K@{shape: diam, label: "nilaiGabungan[a] > nilaiMax[a]"}
-  M@{shape: rect, label: "nilaiMax = [...nilaiGabungan[a]], ...nilaiMax"}
-  N@{shape: diam, label: "nilaiGabungan[b] > nilaiMin[b]"}
+  K@{shape: diam, label: "nilaiGabungan[a] > nilaiMax"}
+  M@{shape: rect, label: "nilaiMax = nilaiGabungan[a]"}
+  N@{shape: diam, label: "nilaiMin < nilaiGabungan[b]"}
   P@{shape: rect, label: "a++"}
   Q@{shape: lean-r, label: "nilaiMax"}
   R@{shape: rect, label: "b = 0"}
   S@{shape: diam, label: "b < nilaiGabungan.length"}
-  T@{shape: rect, label: "nilaiMin = [...nilaiMin, ...nilaiGabungan[b]]"}
+  T@{shape: rect, label: "nilaiMin = nilaiGabungan[b]"}
   U@{shape: rect, label: "b++"}
   V@{shape: lean-r, label: "nilaiMin"}
   W@{shape: rect, label: "c = 0"}
