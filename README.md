@@ -12,8 +12,6 @@
 
   A@{shape: sm-circ, label: "Start"}
   B@{shape: fr-circ, label: "End"}
-  C@{shape: rect, label: "nilaiBudi"}
-  D@{shape: rect, label: "nilaiAndi"}
   E@{shape: rect, label: "nilaiGabungan"}
   F@{shape: rect, label: "nilaiMax = 0"}
   G@{shape: rect, label: "nilaiMin = 0"}
