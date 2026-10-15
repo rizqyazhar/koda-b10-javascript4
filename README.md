@@ -8,7 +8,7 @@
 
 ```mermaid
 
-  flowchart TD
+  flowchart LR
 
   A@{shape: sm-circ, label: "Start"}
   B@{shape: fr-circ, label: "End"}
